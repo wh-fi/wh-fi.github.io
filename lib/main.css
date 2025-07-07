@@ -13,12 +13,19 @@ html, body {
 	position: fixed;
 	top: 0; left: 0; right: 0; bottom: 0;
 	z-index: 1;
-	width: calc(100% + 14px);
-	height: calc(100% + 8px);
+	width: calc(100%);
+	height: calc(100%);
 	padding: 0;
 	margin: 0;
 	border: 0;
 	background-color: #300a24;
+}
+#terminal .xterm-viewport::-webkit-scrollbar {
+	display: none
+}
+#terminal .xterm-viewport {
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 }
 html body , html body *{
 	cursor: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczJyBoZWlnaHQ9JzMnPjxyZWN0IHdpZHRoPSczJyBoZWlnaHQ9JzMnIGZpbGw9J3doaXRlJy8+PC9zdmc+") 1 1, auto !important;
@@ -62,4 +69,7 @@ html body , html body *{
 	/* visibility: hidden !important;
 	opacity: 0 !important;
 	pointer-events: none !important; */
+}
+[dir=ltr]{
+	padding: 10px;
 }
